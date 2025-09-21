@@ -1,5 +1,5 @@
 import type { TextInputProps } from '@/types/reusableComponentsProps';
-import { ref, type Ref, defineEmits } from 'vue';
+import { ref, type Ref } from 'vue';
 
 const useInput = (
   props: TextInputProps,
