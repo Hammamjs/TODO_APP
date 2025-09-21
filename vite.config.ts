@@ -10,5 +10,5 @@ export default defineConfig({
       '@': resolve(__dirname, './src'),
     },
   },
-  base: process.env.BASE_URL || '/TODO_APP/',
+  base: process.env.BASE_URL || '/',
 });
