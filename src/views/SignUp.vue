@@ -141,11 +141,13 @@ import useSignup from '@/composables/useSignup';
 const Input = defineAsyncComponent(() => import('@/components/Input.vue'));
 
 const {
+  r$,
   handleSignUp,
   isFormValid,
   isPending,
   passwordStrength,
   showPassword,
   switchToSignIn,
+  form,
 } = useSignup();
 </script>

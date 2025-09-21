@@ -108,6 +108,8 @@ const useSignup = () => {
     isFormValid,
     handleSignUp,
     switchToSignIn,
+    r$,
+    form,
   };
 };
 

@@ -10,5 +10,5 @@ export default defineConfig({
       '@': resolve(__dirname, './src'),
     },
   },
-  base: process.env.VITE_BASE_PATH || '/TODO_APP/',
+  // base: process.env.VITE_BASE_PATH || '/TODO_APP/',
 });
