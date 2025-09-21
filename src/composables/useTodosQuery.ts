@@ -52,7 +52,6 @@ const useTodosQuery = () => {
         return { previousTodos };
       },
       onError: (err, _newTodo, context) => {
-        console.error(err);
         if (context?.previousTodos) {
           queryClient.setQueryData(['getTodos'], context?.previousTodos);
         }
@@ -82,7 +81,6 @@ const useTodosQuery = () => {
         queryClient.invalidateQueries({ queryKey: ['getTodo'] });
       },
       onError: (err, _todoId, context) => {
-        console.error(err);
         if (context?.previousTodos) {
           queryClient.setQueryData(['getTodo'], context?.previousTodos);
         }
@@ -117,8 +115,6 @@ const useTodosQuery = () => {
         queryClient.invalidateQueries({ queryKey: ['getTodo'] });
       },
       onError: (err, _todo, context) => {
-        console.log(err);
-        console.error(err);
         if (context?.previousTodos) {
           queryClient.setQueryData(['getTodo'], context.previousTodos);
         }

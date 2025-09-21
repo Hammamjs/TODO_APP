@@ -63,7 +63,6 @@ export const useCodeVerificationMutation = () =>
       removeFromLocalstorage('user-email');
       handleSuccess('Code verified successfuly');
       addToLoacalstorage('token', data.tempToken);
-      console.log(data);
     },
     onError: (err) => handleError(err),
   });
