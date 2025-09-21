@@ -1,3 +1,4 @@
+import type { Todo } from '@/types/Todo';
 import apiInstance from './BaseUrl';
 
 export const getTodosApi = async () => {
